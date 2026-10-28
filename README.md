@@ -1,8 +1,11 @@
 # Kingdomino in Pygame
 
 A two-player version of the Kingdomino board game, written in Python with Pygame.
-It was my first Python project, done in autumn 2022 during the integrated
-preparatory cycle at EILCO (Université du Littoral Côte d'Opale).
+It was my first Python project, an individual assignment of the Python course in
+the integrated preparatory cycle at EILCO (Université du Littoral Côte d'Opale),
+October 2022. Comments in the code are in French.
+
+![Main menu](docs/screenshots/menu.png)
 
 ## What is implemented
 
@@ -21,11 +24,7 @@ preparatory cycle at EILCO (Université du Littoral Côte d'Opale).
   with Space and dropped with Enter. It can only be dropped on a few hard-coded
   cells next to the castle.
 
-What is missing: scoring (the `Cellule` class already carries the crown count
-and a "counted" flag for it, but the area computation was never written),
-terrain matching when a domino is placed, the loop over the full 24-domino
-game (only the first draw is played through), and the Options screen, which
-only has a Back button.
+![Play screen at the start of the selection phase](docs/screenshots/board.png)
 
 ## Running it
 
@@ -45,6 +44,14 @@ Run it from the repository root: asset and music paths are relative.
     assets/           domino images, castle, menu background and button frames
     music/            intro loop and button sounds
 
+## Limitations
+
+- No scoring: `Cellule` carries the crown count and a "counted" flag, but the
+  area computation is not implemented.
+- Placement does not check terrain matching, and only the first draw of four
+  dominoes is played through; the loop over the full 24-domino game is missing.
+- The Options screen only has a Back button.
+
 ## Credits
 
 Kingdomino is a board game by Bruno Cathala, published by Blue Orange. This is
@@ -52,8 +59,3 @@ a student re-implementation and is not affiliated with them. The data model
 (`Params`, `Cellule`, `Domino`, `Oriente`) follows the skeleton handed out in
 the course. The `Button` class and the three menu button frames are adapted
 from the baraltech Pygame menu tutorial.
-
-## Context
-
-Individual project, Python course, EILCO integrated preparatory cycle,
-October 2022. Comments in the code are in French.
