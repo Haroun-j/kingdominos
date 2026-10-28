@@ -2,7 +2,6 @@
 import pygame as pg ,sys
 from pygame.locals import *
 from random import randint
-import pygame_menu
 from button import Button
 from params import Params # importer la classe Params
 from dominos_liste import RL,ld_img # deux listes l'une contient les dominos en lettres et l'autre contient les meme en images
